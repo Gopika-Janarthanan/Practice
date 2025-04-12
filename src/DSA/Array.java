@@ -1,11 +1,9 @@
 package DSA;
 import java.lang.StringBuffer;
 import java.util.Arrays;
-
 public class Array {
 
-
-   static int missingNumber(int[] n) {
+    static int missingNumber(int[] n) {
        int c = 0;
        int s = 0;
        for (int i = 0; i < n.length; i++) {
@@ -14,7 +12,7 @@ public class Array {
        }
        return c - s;
    }
-   String mergeAlternately(String w1, String w2) {
+    String mergeAlternately(String w1, String w2) {
        int len = Math.max(w1.length(), w2.length());
             int i = 0;
             StringBuffer s = new StringBuffer();
@@ -29,7 +27,7 @@ public class Array {
             }
             return s.toString();
         }
-        int maximum(int [] arr){
+    int maximum(int [] arr){
        int max=0,i=0;
        while(i<arr.length-1){
            if (arr[i]<arr[i+1]){
@@ -54,12 +52,11 @@ public class Array {
        }
        return sec;
 }
-
-static String reversestrsb (String word){
+    static String reversestrsb (String word){
        StringBuilder s = new StringBuilder(word);
        return s.reverse().toString();
 }
-String reverewhile(String word){
+    String reverewhile(String word){
        int i=0;
        int len= word.length();
        char[] charar= new char[word.length()];
@@ -70,7 +67,7 @@ String reverewhile(String word){
        }
        return new String (charar);
 }
-String leftrotate(int[] arr){
+    String leftrotate(int[] arr){
     //[1,2,3,4,12]
     int temp=arr[0];
     for (int i =1; i < arr.length; i++) {
@@ -80,5 +77,29 @@ String leftrotate(int[] arr){
 
     return Arrays.toString(arr) ;
 }
+    String leftdarr(int[] array,int d){
+        d= d % array.length ;
+        int[]first= new int[d-array.length];
+        int[] second=new int[d] ;
+        int[] arr=new int[first.length+second.length];
+        for (int i = 0; i < d ; i++) {
+            first[i] = array[i];
+        }
+        for (int i = d+1; i < array.length; i++) {
+            second[i-1]=array[i];
+        }
+
+
+        for (int i = 0; i < first.length; i++) {
+            arr[i]=first[i];
+        }
+        for (int i = first.length; i < array.length; i++) {
+            int j=0;
+            arr[i]=second[j];
+            j++;
+
+        }
+       return Arrays.toString(arr);
+    }
 
 }
