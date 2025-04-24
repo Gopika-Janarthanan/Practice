@@ -4,13 +4,13 @@ import javax.sound.sampled.Line;
 import java.util.Arrays;
 
 public class Leetcode {
-    public static void main(String[] args) {
-        int[] arrays={13,12,40,6,50};
-        int[][] array ={{3,7,4,2},
+      public static void main(String[] args) {
+      int[] arrays={13,12,400,6,6,50};
+      int[][] array ={{3,7,4,2},
                 {5,6,12,12},
                 {4,2,1,7,9},
                 {1,2,4,4,}};
-        int[] binarrar= new int[]{2,4,5,12,12,12,12,12,24,38,44,55,120,122};
+      int[] binarrar= new int[]{2,4,5,12,12,12,12,12,24,38,44,55,120,122,144,266,351,399,400,412,424,444,500};
 
       Array arr = new Array();
       LinearSearching ls=new LinearSearching();
@@ -28,12 +28,14 @@ public class Leetcode {
       System.out.println(LinearSearching.maximumWealth2(array));
       System.out.println(LinearSearching.linearTarget(arrays,12));
       System.out.println(Arrays.toString(LinearSearching.linear2d(array,12)));
+      System.out.println(LinearSearching.peakIndexInMountainArray(arrays));
       System.out.println();
       System.out.println("Binary Searching  : ");
       System.out.println(BinarySearching.ceiling(binarrar,15));
       System.out.println(BinarySearching.floor(binarrar,15));
       System.out.println(BinarySearching.findchar(new char[]{'c','f','j','h','i'},'c'));
       System.out.println(Arrays.toString(BinarySearching.searchRange(binarrar,12)));
+      System.out.println(BinarySearching.infinitearr(binarrar,120));
 
     }
 }

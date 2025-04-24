@@ -79,4 +79,21 @@ public class BinarySearching {
         return ans;
     }
 
+    static int infinitearr(int []arr,int tar){
+        int s=0,e=2*s+1;
+        while(s<=e){
+            e=2*s+1;
+            int mid=s+(e-s)/2;
+            if(arr[mid]<tar){
+                s=mid+1;
+            }
+            else if(arr[mid]>tar){
+               e=mid-1;
+            }
+            else{
+                return mid;            }
+        }
+        return -1;
+    }
+
 }

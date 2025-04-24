@@ -62,7 +62,7 @@ public class LinearSearching {
             }
         } return max;
     }
-    public static int maximumWealth2(int[][] accounts) {
+    static int maximumWealth2(int[][] accounts) {
         int max=0,count=0;
         for(int[] i: accounts){
             count=0;
@@ -74,5 +74,16 @@ public class LinearSearching {
             }
         }
         return max;
+    }
+    static int peakIndexInMountainArray(int[] arr) {
+        int max=0;
+        int index=0;
+        for(int i=0;i<arr.length;i++){
+            if(arr[i] > max){
+                max=arr[i];
+                index=i;
+            }
+        }
+        return index ;
     }
 }
