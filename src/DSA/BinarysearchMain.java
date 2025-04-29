@@ -18,5 +18,6 @@ public class BinarysearchMain {
         System.out.println(Arrays.toString(BinarySearching.searchRange(binarrar,12)));
         System.out.println(BinarySearching.infinitearr(binarrar,120));
         System.out.println(BinarySearching.peakIndexInMountainArray(peakarr));
+        System.out.println(BinarySearching.findPeakElement(binarrar));
     }
 }

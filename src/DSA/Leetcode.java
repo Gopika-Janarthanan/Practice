@@ -31,6 +31,7 @@ public class Leetcode {
       System.out.println(Arrays.toString(LinearSearching.linear2d(array,12)));
       System.out.println(LinearSearching.peakIndexInMountainArray(arrays));
       System.out.println(Arrays.toString(LinearSearching.twoSum(arrays,12)));
+      System.out.println(LinearSearching.searchrotarearr(arrays,34));
       System.out.println();
       System.out.println("Binary Searching  : ");
       System.out.println(BinarySearching.ceiling(binarrar,15));
@@ -39,6 +40,7 @@ public class Leetcode {
       System.out.println(Arrays.toString(BinarySearching.searchRange(binarrar,12)));
       System.out.println(BinarySearching.infinitearr(binarrar,120));
       System.out.println(BinarySearching.peakIndexInMountainArray(peakarr));
+      System.out.println(BinarySearching.findPeakElement(binarrar));
 
     }
 }

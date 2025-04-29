@@ -19,6 +19,7 @@ public class LinearSearchMain {
         System.out.println(Arrays.toString(LinearSearching.linear2d(array,12)));
         System.out.println(LinearSearching.peakIndexInMountainArray(arrays));
         System.out.println(Arrays.toString(LinearSearching.twoSum(arrays,12)));
+        System.out.println(LinearSearching.searchrotarearr(arrays,34));
 
     }
 }
