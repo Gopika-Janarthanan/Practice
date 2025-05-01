@@ -27,10 +27,14 @@ public class BasicMath {
     static int rev(int num){
         int r=0;
         while(0< num){
-            int l=num%10;
+            int d= num%10;
+            r=r*10+d;
             num=num/10;
-            r=l*10+num%10;
         }
         return r;
+    }
+    //5.Find power of a number
+    static int pow(int n){
+        return n*n;
     }
 }

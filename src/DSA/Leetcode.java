@@ -2,6 +2,7 @@ package DSA;
 
 import javax.sound.sampled.Line;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Leetcode {
       public static void main(String[] args) {
@@ -15,6 +16,18 @@ public class Leetcode {
 
       Array arr = new Array();
       LinearSearching ls=new LinearSearching();
+      Scanner input = new Scanner(System.in);
+      System.out.print("Enter a Number : ");
+      int number = input.nextInt();
+      System.out.println("Even or odd :-");
+      System.out.println(BasicMath.evenorodd(number));
+      System.out.println("Find Last digit of a number:-");
+      System.out.println(BasicMath.findLastDigit(number));
+      System.out.println("Count of digit :-");
+      System.out.println(BasicMath.digitsCount(number));
+      System.out.println("Reversee anumber :-");
+      System.out.println(BasicMath.rev(number));
+      System.out.println();
       System.out.println("Array :");
       System.out.println(arr.missingNumber(arrays));
       System.out.println(arr.mergeAlternately("123","456"));
@@ -41,6 +54,7 @@ public class Leetcode {
       System.out.println(BinarySearching.infinitearr(binarrar,120));
       System.out.println(BinarySearching.peakIndexInMountainArray(peakarr));
       System.out.println(BinarySearching.findPeakElement(binarrar));
+      System.out.println();
 
     }
 }

@@ -15,6 +15,7 @@ public class BasicMain {
         System.out.println(BasicMath.digitsCount(number));
         System.out.println("Reversee anumber :-");
         System.out.println(BasicMath.rev(number));
+        System.out.println(BasicMath.pow(12));
 
     }
 }
