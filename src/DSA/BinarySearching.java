@@ -122,5 +122,49 @@ public class BinarySearching {
         }
         return s;
     }
+    static int mountainarrayindex(int[]arr,int tar){
+        int peek= pivot(arr);
+        int assending = bs(arr,tar,0,peek,true);
+        if(assending!=-1){
+            return assending;
+        }
+        return bs(arr,tar,peek+1,arr.length-1,false);
+    }
+    static int pivot(int arr[]){
+        int s=0,e=arr.length-1;
+        while(s<=e){
+            int mid =s+(e-s)/2;
+            if(arr[mid]<arr[mid+1]){
+                s=mid+1;
+            }
+            else{
+                e=mid;
+            }
+        }
+        return s;
+    }
+    static int bs(int arr[], int target, int st, int ed, boolean assending){
+        while(st<ed){
+            int mid=st+(ed-st)/2;
+            if(arr[mid]==target) return mid;
+            if(assending){
+                if(arr[mid]< target){
+                    st=mid+1;
+                }
+                else{
+                    ed=mid-1;
+                }
+            }
+            else{
+                if(arr[mid]>target){
+                    ed=mid-1;
+                }
+                else{
+                    st=mid+1;
+                }
+            }
+        }
+        return -1;
+    }
 
 }
