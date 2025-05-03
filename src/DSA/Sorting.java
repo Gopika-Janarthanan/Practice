@@ -13,4 +13,27 @@ public class Sorting {
         }
         return arr;
     }
-}
+    static class CyclicSort{
+        void missingNumber(int[] arr){
+            int i=0;
+            while(i<arr.length){
+                int c=arr[i];
+                if(arr[i] < arr.length&& arr[c]!=arr[i]){
+                    swap(arr,c,i);
+                }
+                else{
+                    i++;
+                }
+            }
+            for(int in:arr){
+                System.out.print(in+" ");
+            }
+
+        }
+       void  swap(int[] arr,int f,int l){
+            int temp = arr[f];
+            arr[f]=arr[l];
+            arr[l]=temp;
+        }
+    }
+    }
