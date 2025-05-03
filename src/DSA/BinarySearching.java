@@ -1,6 +1,40 @@
 package DSA;
 
 public class BinarySearching {
+    static  int search(int[] arr, int target) {
+        int s=0,e=arr.length-1;
+        while(s<=e){
+            int mid= s+(e-s)/2;
+            if(arr[mid] <target){
+                s=mid+1;
+            }
+            else if(arr[mid]>target){
+                e=mid-1;
+            }
+            else{
+                return mid;
+            }
+        }
+        return -1;
+    }
+    static int searchInsert(int[] nums, int target) {
+        int s=0, e=nums.length-1;
+        while(s<=e){
+            int mid=s+(e-s)/2;
+            if(nums[mid]<target){
+                s=mid+1;
+            }
+            else if(nums[mid]>target){
+                e=mid-1;
+            }
+            else{
+                return mid;
+            }
+
+        }
+        return s;
+
+    }
     static int ceiling(int[] array, int target) {
         int s = 0, e = array.length - 1;
         while (s <= e) {

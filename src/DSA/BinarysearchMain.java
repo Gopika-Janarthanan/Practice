@@ -9,10 +9,12 @@ public class BinarysearchMain {
                 {5,6,12,12},
                 {4,2,1,7,9},
                 {1,2,4,4,}};
-        int[] binarrar= new int[]{2,4,5,12,12,12,12,12,24,38,44,55,120,122,144,266,351,399,400,412,424,444,500};
+        int[] binarrar= new int[]{2,4,5,12,24,38,44,55,120,122,144,266,351,399,400,412,424,444,500};
         int[] peakarr = new int[]{1,2,3,5,3,2,0};
         int[] sortedrotate ={4,6,9,0,1,2,3};
         System.out.println("Binary Searching  : ");
+        System.out.println(BinarySearching.search(binarrar,15));
+        System.out.println(BinarySearching.searchInsert(binarrar,15));
         System.out.println(BinarySearching.ceiling(binarrar,15));
         System.out.println(BinarySearching.floor(binarrar,15));
         System.out.println(BinarySearching.findchar(new char[]{'c','f','j','h','i'},'c'));

@@ -11,8 +11,10 @@ public class Leetcode {
                 {5,6,12,12},
                 {4,2,1,7,9},
                 {1,2,4,4,}};
-      int[] binarrar= new int[]{2,4,5,12,12,12,12,12,24,38,44,55,120,122,144,266,351,399,400,412,424,444,500};
+      int[] binarrar= new int[]{2,4,5,12,24,38,44,55,120,122,144,266,351,399,400,412,424,444,500};
       int[] peakarr = new int[]{1,2,3,5,3,2,0};
+      int arrs[]={88888,12,5,34,85,2,76,23};
+      int [] continuousn ={9,6,4,2,3,5,7,0,1};
 
       Array arr = new Array();
       LinearSearching ls=new LinearSearching();
@@ -47,6 +49,8 @@ public class Leetcode {
       System.out.println(LinearSearching.searchrotarearr(arrays,34));
       System.out.println();
       System.out.println("Binary Searching  : ");
+      System.out.println(BinarySearching.search(binarrar,15));
+      System.out.println(BinarySearching.searchInsert(binarrar,15));
       System.out.println(BinarySearching.ceiling(binarrar,15));
       System.out.println(BinarySearching.floor(binarrar,15));
       System.out.println(BinarySearching.findchar(new char[]{'c','f','j','h','i'},'c'));
@@ -55,6 +59,12 @@ public class Leetcode {
       System.out.println(BinarySearching.peakIndexInMountainArray(peakarr));
       System.out.println(BinarySearching.findPeakElement(binarrar));
       System.out.println();
+      System.out.println("Sorting : ");
+      System.out.println(Arrays.toString(Sorting.bubblesort(arrs)));
+      Sorting sort = new Sorting();
+      Sorting.CyclicSort csort = new Sorting.CyclicSort();
+      csort.missingNumber(continuousn);
+
 
     }
 }
