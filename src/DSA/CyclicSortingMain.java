@@ -8,6 +8,7 @@ public class CyclicSortingMain {
         CyclicSorting.findDuplicate(continuousnum);
         CyclicSorting.missingNumber(continuousnum);
         CyclicSorting.findDisappearedNumbers(continuousnum);
+        CyclicSorting.findDuplicate(continuousnum);
 
     }
 

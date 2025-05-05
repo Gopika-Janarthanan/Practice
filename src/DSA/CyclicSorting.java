@@ -73,5 +73,25 @@ class CyclicSorting {
         }
         return ans;
     }
+    List<Integer> findDuplicates(int[] nums) {
+        List<Integer> ans = new ArrayList<>();
+        int i=0;
+        while(i<nums.length){
+            int c= nums[i]-1;
+            if(nums[i]!=nums[c])
+            {
+                swaped(nums,i,c);
+            }
+            else{
+                i++;
+            }
+        }
+        for(int index=0;index<nums.length;index++){
+            if(nums[index]!=index+1){
+                ans.add(nums[index]);
+            }
+        }
+        return ans;
+    }
 
-}
+    }
