@@ -61,10 +61,6 @@ public class Leetcode {
       System.out.println();
       System.out.println("Sorting : ");
       System.out.println(Arrays.toString(Sorting.bubblesort(arrs)));
-      Sorting sort = new Sorting();
-      Sorting.CyclicSort csort = new Sorting.CyclicSort();
-      csort.missingNumber(continuousn);
-
 
     }
 }
