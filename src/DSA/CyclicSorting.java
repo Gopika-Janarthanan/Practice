@@ -19,13 +19,6 @@ class CyclicSorting {
         }
 
     }
-
-    void swap(int[] arr, int f, int l) {
-        int temp = arr[f];
-        arr[f] = arr[l];
-        arr[l] = temp;
-    }
-
     static List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> ans =new ArrayList<>();
         int i=0;
@@ -73,7 +66,7 @@ class CyclicSorting {
         }
         return ans;
     }
-    List<Integer> findDuplicates(int[] nums) {
+    static List<Integer> findDuplicates(int[] nums) {
         List<Integer> ans = new ArrayList<>();
         int i=0;
         while(i<nums.length){
@@ -89,6 +82,27 @@ class CyclicSorting {
         for(int index=0;index<nums.length;index++){
             if(nums[index]!=index+1){
                 ans.add(nums[index]);
+            }
+        }
+        return ans;
+    }
+    static int[] findErrorNums(int[] nums) {
+        int[] ans={-1,-1};
+        int i=0;
+        while(i<nums.length){
+            int c= nums[i]-1;
+            if(nums[i]!=nums[c])
+            {
+                swaped(nums,i,c);
+            }
+            else{
+                i++;
+            }
+        }
+        for(int index=0;index<nums.length;index++){
+            if(nums[index]!=index+1){
+                ans[0]=nums[index];
+                ans[1]=index+1;
             }
         }
         return ans;

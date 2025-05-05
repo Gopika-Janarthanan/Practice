@@ -9,6 +9,8 @@ public class CyclicSortingMain {
         CyclicSorting.missingNumber(continuousnum);
         CyclicSorting.findDisappearedNumbers(continuousnum);
         CyclicSorting.findDuplicate(continuousnum);
+        CyclicSorting.findDuplicates(continuousnum);
+        CyclicSorting.findErrorNums(continuousn);
 
     }
 
