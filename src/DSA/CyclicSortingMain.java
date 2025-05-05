@@ -11,6 +11,7 @@ public class CyclicSortingMain {
         CyclicSorting.findDuplicate(continuousnum);
         CyclicSorting.findDuplicates(continuousnum);
         CyclicSorting.findErrorNums(continuousn);
+        CyclicSorting.firstMissingPositive(continuousnum);
 
     }
 
