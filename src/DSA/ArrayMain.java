@@ -1,5 +1,7 @@
 package DSA;
 
+import java.util.Arrays;
+
 public class ArrayMain {
     public static void main(String[] args) {
         Array arr = new Array();
@@ -11,5 +13,6 @@ public class ArrayMain {
         System.out.println(Array.reversestrsb("GOPIKA Janarthanan"));
         System.out.println(arr.reverewhile("hello"));
         System.out.println(arr.leftrotate(new int[]{1,12,3,4,120,32}));
+        System.out.println(Arrays.toString(Array.rotate(arrays,3)));
     }
 }

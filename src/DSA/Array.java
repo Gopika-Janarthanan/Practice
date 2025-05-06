@@ -101,5 +101,31 @@ public class Array {
         }
        return Arrays.toString(arr);
     }
+    static int[] rotate(int[] nums , int k) {
+        int len=nums.length-k;
+        int [] ans =new int[nums.length];
+        int s=0;
+        int c=k;
+        k = k % nums.length;
+        if (k == 0 || nums.length <= 1) return nums;
+        for(int i =0;i<nums.length-k;i++){
+
+            if(c<nums.length){
+                ans[c]=nums[i];
+                c++;
+            }
+        }
+        for(int i =nums.length-k+1;i<nums.length;i++){
+            if(s<k){
+                ans[s]=nums[i];
+                s++;
+            }
+        }
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = ans[i];
+        }
+        return nums;
+
+    }
 
 }
