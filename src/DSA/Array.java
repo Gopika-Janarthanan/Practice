@@ -1,6 +1,9 @@
 package DSA;
 import java.lang.StringBuffer;
 import java.util.Arrays;
+import java.util.Set;
+import java.util.TreeSet;
+
 public class Array {
 
     static int missingNumber(int[] n) {
@@ -127,5 +130,25 @@ public class Array {
         return nums;
 
     }
+    static  int removeDuplicates(int[] nums) {
+        Set<Integer> ans = new TreeSet<>();
+        int c=0;
+        for(int i: nums){
+            ans.add(i);
+        }
+        for(int i=1;i<nums.length;i++){
+            if(nums[i-1]==nums[i]){
+                c++;
+            }
+        }
+        int s=0;
+        for(int in : ans){
+            nums[s++]=in;
+
+        }
+        return ans.size();
+    }
+
+
 
 }
