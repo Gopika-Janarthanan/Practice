@@ -2,13 +2,22 @@ package Recursion;
 
 public class Naturalnumbers {
     public static void main(String[] args) {
-        Naturalnumbers.naturalnumber(12);
+        Naturalnumbers.naturalnum(12);
+        System.out.println(revnaturalnumber(12));
     }
-    static int naturalnumber(int n){
+    static int revnaturalnumber(int n){
         if(n==0){
             return n;
         }
         System.out.print(n + " ");
-        return naturalnumber(n-1);
+        return revnaturalnumber(n-1);
+    }
+    static  void naturalnum(int n){
+        if(n==0){
+            return ;
+        }
+        naturalnum(n-1);
+        System.out.print(n +" ");
+
     }
 }
