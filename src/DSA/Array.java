@@ -130,7 +130,7 @@ public class Array {
         return nums;
 
     }
-    static  int removeDuplicates(int[] nums) {
+    static  int removeDuplicates1(int[] nums) {
         Set<Integer> ans = new TreeSet<>();
         int c=0;
         for(int i: nums){
@@ -157,6 +157,17 @@ public class Array {
             }
         }
         return c;
+    }
+
+    static  int removeDuplicates(int[] nums) {
+        int j = 1;
+        for (int i = 1; i < nums.length; i++) {
+            if (j==1  || nums[i] != nums[j - 2]) {
+                nums[j] = nums[i];
+                j++;
+            }
+        }
+        return j;
     }
 
 }

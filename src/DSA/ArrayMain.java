@@ -14,7 +14,8 @@ public class ArrayMain {
         System.out.println(arr.reverewhile("hello"));
         System.out.println(arr.leftrotate(new int[]{1,12,3,4,120,32}));
         System.out.println(Arrays.toString(Array.rotate(arrays,3)));
-        System.out.println(Array.removeDuplicates(arrays));
+        System.out.println(Array.removeDuplicates1(arrays));
         System.out.println(Array.removeElement(arrays,3));
+        System.out.println(Array.removeDuplicates(arrays));
     }
 }
