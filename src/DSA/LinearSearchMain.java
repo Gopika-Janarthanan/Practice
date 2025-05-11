@@ -21,6 +21,7 @@ public class LinearSearchMain {
         System.out.println(Arrays.toString(LinearSearching.twoSum(arrays,12)));
         System.out.println(LinearSearching.searchrotarearr(arrays,34));
         System.out.println(LinearSearching.searchMatrix(array,7));
+        System.out.println(LinearSearching.threeConsecutiveOdds(arrays));
 
     }
 }
