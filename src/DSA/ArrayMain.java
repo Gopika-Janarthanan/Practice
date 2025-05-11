@@ -17,5 +17,6 @@ public class ArrayMain {
         System.out.println(Array.removeDuplicates1(arrays));
         System.out.println(Array.removeElement(arrays,3));
         System.out.println(Array.removeDuplicates(arrays));
+        System.out.println(Array.isPalindrome("Gopika Janarthanan"));
     }
 }
