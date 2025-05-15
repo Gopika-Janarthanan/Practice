@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class BasicMathMain {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        int []arr={1,2,4};
         System.out.print("Enter a Number : ");
         int number = input.nextInt();
         System.out.println("Even or odd :-");
@@ -16,6 +17,7 @@ public class BasicMathMain {
         System.out.println("Reversee anumber :-");
         System.out.println(BasicMath.rev(number));
         System.out.println(BasicMath.pow(12));
+        System.out.println(BasicMath.plusOne(arr));
 
     }
 }
