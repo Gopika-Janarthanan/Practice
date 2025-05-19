@@ -18,5 +18,6 @@ public class ArrayMain {
         System.out.println(Array.removeElement(arrays,3));
         System.out.println(Array.removeDuplicates(arrays));
         System.out.println(Array.isPalindrome("Gopika Janarthanan"));
+        System.out.println(Array.triangleType(new int[]{3,3,3}));
     }
 }

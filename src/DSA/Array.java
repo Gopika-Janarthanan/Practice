@@ -169,7 +169,6 @@ public class Array {
         }
         return j;
     }
-
     static boolean isPalindrome(String s) {
         s = s.toLowerCase().replaceAll("[^a-z0-9]", "");
         int left = 0;
@@ -183,6 +182,21 @@ public class Array {
             right--;
         }
         return true;
+    }
+    static String triangleType(int[] nums) {
+        int i=2;
+        if(nums[i-2] + nums[i-1] <= nums[i] ||
+                nums[i-2] + nums[i] <= nums[i-1] ||
+                nums[i-1] + nums[i] <= nums[i-2]) {
+            return "none";
+        }
+        else if(nums[i-2]==nums[i-1] && nums[i-1]==nums[i]){
+            return "equilateral";
+        }
+        else if(nums[i-2] == nums[i-1]|| nums[i-1]==nums[i] || nums[i-2]==nums[i]){
+            return "isosceles";
+        }
+        return "scalene";
     }
 
 }
