@@ -50,4 +50,12 @@ public class BasicMath {
         newDigits[0] = 1;
         return newDigits;
     }
+    static boolean prime(int n){
+        for (int i=0;i<=n;i++){
+            if(n%i==0 && n%n==0 ){
+                return true;
+            }
+        }
+        return false;
+    }
 }

@@ -1,4 +1,4 @@
-package ConsoleApp;
+package ConsoleApp.EcommerceApp;
 
 public class User {
     String username,email,phoneno,address;

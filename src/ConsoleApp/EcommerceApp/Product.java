@@ -1,4 +1,4 @@
-package ConsoleApp;
+package ConsoleApp.EcommerceApp;
 
 public class Product {
     String productname,price,companyname;

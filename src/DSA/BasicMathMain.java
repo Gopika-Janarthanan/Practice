@@ -18,6 +18,7 @@ public class BasicMathMain {
         System.out.println(BasicMath.rev(number));
         System.out.println(BasicMath.pow(12));
         System.out.println(BasicMath.plusOne(arr));
+        System.out.println(BasicMath.prime(2));
 
     }
 }

@@ -1,4 +1,4 @@
-package ConsoleApp;
+package ConsoleApp.EcommerceApp;
 
 import java.util.Scanner;
 
