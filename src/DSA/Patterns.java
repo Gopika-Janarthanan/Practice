@@ -2,8 +2,9 @@ package DSA;
 
 public class Patterns {
     public static void main(String[] args) {
-        rectangle(5);
-        righttriangle(3);
+       rectangle(5);
+       righttriangle(3);
+       lefttriangle(3);
     }
     static void rectangle(int n){
         for (int row = 0; row < n; row++) {
@@ -22,5 +23,15 @@ public class Patterns {
 
         }
     }
+    static void lefttriangle(int n){
+        for (int row=0;row<n;row++){
+            for(int col=0;col<n-row;col++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+
 
 }
