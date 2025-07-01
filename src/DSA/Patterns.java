@@ -5,6 +5,7 @@ public class Patterns {
        rectangle(5);
        righttriangle(3);
        lefttriangle(3);
+       leftno(5);
     }
     static void rectangle(int n){
         for (int row = 0; row < n; row++) {
@@ -31,6 +32,14 @@ public class Patterns {
             System.out.println();
         }
 
+    }
+    static void leftno(int n){
+        for(int row=0;row<n;row++){
+            for(int col=0;col<row;col++){
+                System.out.print(row);
+            }
+            System.out.println();
+        }
     }
 
 
