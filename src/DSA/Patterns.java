@@ -7,6 +7,7 @@ public class Patterns {
        lefttriangle(3);
        leftno(5);
        righttno(5);
+       halfdiamond(5);
     }
     static void rectangle(int n){
         for (int row = 0; row < n; row++) {
@@ -46,6 +47,20 @@ public class Patterns {
         for(int row=0;row<n;row++){
             for(int col=0;col<row;col++){
                 System.out.print(col+1);
+            }
+            System.out.println();
+        }
+    }
+    static void halfdiamond(int n){
+        for(int row=0;row<n;row++){
+            for(int col=0;col<row;col++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+        for (int r = 0; r < n; r++) {
+            for (int c=0;c<n-r;c++){
+                System.out.print("* ");
             }
             System.out.println();
         }
