@@ -14,10 +14,13 @@ public class LinkedList {
         addLast(120);
         insert(2,12);
         countnode();
-        display();
+        indexofnode(2);
         reverse();
         deletefirst();
-        indexofnode(2);
+        display();
+        deleteindex(3);
+
+
 
 
 
@@ -63,6 +66,21 @@ public class LinkedList {
             }
             display();
         }
+    }
+    static void deleteindex(int index){
+        int c=0;
+        Node temp=head;
+        while(temp.next!=null){
+            if(head==null){
+                tail=null;
+            }
+            else{
+                if(c==index){
+                    temp.next=temp.next.next;
+                }
+            }
+        }
+        display();
     }
 
     static void display() {
