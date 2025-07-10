@@ -14,6 +14,7 @@ public class LinkedList {
         countnode();
         display();
         reverse();
+        deletefirst();
 
 
 
@@ -70,6 +71,16 @@ public class LinkedList {
         display();
 
     }
+    static void deletefirst(){
+        if(head==null){
+            System.out.println("Linnked list is empty");
+        }
+        else{
+            head=head.next;
+        }
+        display();
+    }
+
 }
 class Node{
     Node next;
