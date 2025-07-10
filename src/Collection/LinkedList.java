@@ -11,8 +11,10 @@ public class LinkedList {
         addLast(12);
         addFirst(0);
         addLast(120);
-        display();
         countnode();
+        display();
+        reverse();
+
 
 
     }
@@ -54,6 +56,19 @@ public class LinkedList {
             current=current.next;
         }
         System.out.println(c);
+    }
+    static void reverse(){
+        Node pre=null,temp=head,after;
+        head=tail;
+        tail=temp;
+        while(temp!=null){
+            after=temp.next;
+            temp.next=pre;
+            pre=temp;
+            temp=after;
+        }
+        display();
+
     }
 }
 class Node{
