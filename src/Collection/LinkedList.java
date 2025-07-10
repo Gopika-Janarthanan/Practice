@@ -14,6 +14,7 @@ public class LinkedList {
         countnode();
         display();
         reverse();
+        indexofnode(3);
         deletefirst();
 
 
@@ -49,14 +50,14 @@ public class LinkedList {
         }
         System.out.println("null");
     }
-    static void countnode(){
+    static int countnode(){
         Node current = head;
         int c=0;
         while(current!=null){
             c++;
             current=current.next;
         }
-        System.out.println(c);
+        return c;
     }
     static void reverse(){
         Node pre=null,temp=head,after;
@@ -80,8 +81,28 @@ public class LinkedList {
         }
         display();
     }
+    static void indexofnode(int index) {
+        int c = 0;
+        Node current =head;
+        while(current!=null){
+            if(c==index){
+                System.out.println(current.val);
+            }
+            c++;
+            current=current.next;
+        }
+    }
+    static void deletelast() {
+        if (tail == null) {
+            System.out.println("List is empty");
+        }
+        else {
+            indexofnode((countnode()-1));
+        }
+        }
+    }
 
-}
+
 class Node{
     Node next;
     int val;
