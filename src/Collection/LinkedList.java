@@ -10,7 +10,9 @@ public class LinkedList {
         addFirst(3);
         addLast(12);
         addFirst(0);
+        addLast(120);
         display();
+        countnode();
 
 
     }
@@ -26,7 +28,6 @@ public class LinkedList {
             head=node;
         }
     }
-
     static void addLast(int val){
         if(tail==null){
             addFirst(val);
@@ -44,6 +45,15 @@ public class LinkedList {
             current=current.next;
         }
         System.out.println("null");
+    }
+    static void countnode(){
+        Node current = head;
+        int c=0;
+        while(current!=null){
+            c++;
+            current=current.next;
+        }
+        System.out.println(c);
     }
 }
 class Node{
