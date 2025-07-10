@@ -3,9 +3,13 @@ package Collection;
 public class LinkedList {
     static Node head=null,tail=null;
     public static void main(String[] args) {
+
         addFirst(1);
         addFirst(2);
+        addLast(7);
         addFirst(3);
+        addLast(12);
+        addFirst(0);
         display();
 
 
@@ -20,6 +24,17 @@ public class LinkedList {
         else{
             node.next=head;
             head=node;
+        }
+    }
+
+    static void addLast(int val){
+        if(tail==null){
+            addFirst(val);
+        }
+        else{
+            Node newnode = new Node(val);
+            tail.next=newnode;
+            tail=newnode;
         }
     }
     static void  display(){
