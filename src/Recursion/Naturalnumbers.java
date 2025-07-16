@@ -6,6 +6,7 @@ public class Naturalnumbers {
         Naturalnumbers.naturalnum(12);
         System.out.println(revnaturalnumber(12));
         System.out.println(numberOfSteps(12));
+        System.out.println(natural(12));
     }
     static int revnaturalnumber(int n){
         if(n==0){
@@ -14,7 +15,13 @@ public class Naturalnumbers {
         System.out.print(n + " ");
         return revnaturalnumber(n-1);
     }
-
+    static int natural(int n){
+        if(n==0) {
+            return n;
+        }
+        System.out.print(n+" ");
+        return natural(n-1);
+    }
     static  void naturalnum(int n){
         if(n==0){
             return ;
