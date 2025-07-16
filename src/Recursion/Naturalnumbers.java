@@ -14,6 +14,7 @@ public class Naturalnumbers {
         System.out.print(n + " ");
         return revnaturalnumber(n-1);
     }
+
     static  void naturalnum(int n){
         if(n==0){
             return ;
