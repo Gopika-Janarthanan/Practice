@@ -1,4 +1,4 @@
-package ConsoleApp.OnDemandApp;
+package ConsoleApp.BankApp;
 import java.util.Scanner;
 public class Main {
     static Scanner in= new Scanner(System.in);

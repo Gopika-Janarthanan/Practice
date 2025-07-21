@@ -1,4 +1,4 @@
-package ConsoleApp.OnDemandApp;
+package ConsoleApp.BankApp;
 
 public class User {
     String name, address, phoneno;
