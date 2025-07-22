@@ -2,16 +2,17 @@ package Recursion;
 
 public class revusingrecursion {
     public static void main(String[] args) {
-        System.out.println(rev(12345,0));
+        System.out.println(rev(123405));
 
     }
+    static int rev(int n){
+        return helprev(n,0);
+    }
+    static int helprev(int n,int sum){
 
-    static int rev(int n,int sum){
-
-        if(n==0){
+        if(n==0) {
             return sum;
         }
-        int rem=n%10;
-        return rev(n/10,sum*10+rem);
+        return helprev(n/10,sum*10+n%10);
     }
 }
